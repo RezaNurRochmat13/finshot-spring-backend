@@ -13,7 +13,7 @@ Finshot Backend Asessment
 ## Installation
 ```
 1. Clone the repository
-2. Create database
+2. Run docker compose up -d
 3. Run `mvn clean install` to build the project
 4. Run `mvn spring-boot:run` to start the application
 ```
@@ -36,10 +36,12 @@ Finshot Backend Asessment
 
 ## Architecture
 ```
-- Controller => Package for handling HTTP requests
-- Service => Package for business logic
-- Repository => Package for data access
 - Entity => Package for defining database entities
+- Exeception => Package for defining custom exceptions
+- Presenter => Package for handling HTTP requests
+- Repository => Package for data access
+- Service => Package for business logic
+- Infra => Package for infrastructure components
 ```
 
 ## Contributing
