@@ -1,5 +1,5 @@
-# Spring Boilerplate Template
-Spring boilerplate template
+# Finshot Backend Asessment
+Finshot Backend Asessment
 
 ## Requirements
 ```
@@ -13,8 +13,9 @@ Spring boilerplate template
 ## Installation
 ```
 1. Clone the repository
-2. Run `mvn clean install` to build the project
-3. Run `mvn spring-boot:run` to start the application
+2. Create database
+3. Run `mvn clean install` to build the project
+4. Run `mvn spring-boot:run` to start the application
 ```
 
 ## Usage
@@ -27,17 +28,18 @@ Spring boilerplate template
 ## Dependencies
 ```
 - Spring Boot
+- Hibernate
 - Spring Data JPA
-- H2 Database
+- PostgreSQL
 - Lombok
 ```
 
 ## Architecture
 ```
-- Controller
-- Service
-- Repository
-- Entity
+- Controller => Package for handling HTTP requests
+- Service => Package for business logic
+- Repository => Package for data access
+- Entity => Package for defining database entities
 ```
 
 ## Contributing
