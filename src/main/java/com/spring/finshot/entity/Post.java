@@ -1,4 +1,4 @@
-package com.spring.boilerplate.entity;
+package com.spring.finshot.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -8,13 +8,13 @@ import lombok.Setter;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "articles")
+@Table(name = "posts")
 @Getter
 @Setter
 @NoArgsConstructor
-public class Article extends Auditing implements Serializable {
+public class Post extends Auditing implements Serializable {
     @Id
-    @GeneratedValue(strategy = jakarta.persistence.GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(name = "title")
@@ -28,4 +28,10 @@ public class Article extends Auditing implements Serializable {
 
     @Column(name = "author")
     private String author;
+
+    @Column(name = "views")
+    private int views;
+
+    @Column(name = "published")
+    private boolean published;
 }

@@ -1,4 +1,4 @@
-package com.spring.boilerplate.entity;
+package com.spring.finshot.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.EntityListeners;
