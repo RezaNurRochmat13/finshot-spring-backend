@@ -45,6 +45,7 @@ public class PostServiceImpl implements PostService {
         post.setAuthor(payload.getAuthor());
         post.setViews(0);
         post.setPublished(false);
+        post.setCreatedAt(LocalDateTime.now());
 
         return postRepository.save(post);
     }
@@ -59,6 +60,7 @@ public class PostServiceImpl implements PostService {
         post.setContent(payload.getContent());
         post.setAuthor(payload.getAuthor());
         post.setPublished(payload.isPublished());
+        post.setUpdatedAt(LocalDateTime.now());
 
         return postRepository.save(post);
     }

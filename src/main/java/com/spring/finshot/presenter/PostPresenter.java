@@ -32,7 +32,7 @@ public class PostPresenter {
     }
 
     @GetMapping("/{id}")
-    public Map<String, Object> getPostById(Long id) {
+    public Map<String, Object> getPostById(@PathVariable Long id) {
         Map<String, Object> response = new HashMap<>();
         response.put("status", "success");
         response.put("data", postService.findPostById(id));
